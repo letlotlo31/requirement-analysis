@@ -1,2 +1,126 @@
 # requirement-analysis
-Requirement Analysis in Software Development This repository is an ALX Pro-Dev project focused on the Requirement Analysis phase of the Software Development Lifecycle (SDLC). The goal is to create a detailed blueprint for a booking management system (similar to AirBnB or OYO), which will serve as the foundation for all future development, design, and testing.What is Requirement Analysis?Requirement Analysis is the process of figuring out, documenting, and analyzing what a piece of software needs to do and how well it needs to do it.It's the critical "blueprint" phase of the SDLC. It involves talking to stakeholders (like users, business managers, and other developers) to understand their goals, and then translating those goals into detailed requirements. If you don't get this phase right, you risk building the wrong product, which wastes time, money, and effort. It's the bridge between the initial business idea and the final technical solution.Why is Requirement Analysis Important?This phase is critical because it directly impacts the project's success. A mistake caught during analysis is 100 times cheaper to fix than a mistake found after the product has been built and deployed.Sets Clear Goals and Scope: It provides a clear, agreed-upon "source of truth." The development team knows exactly what to build, and the client knows exactly what to expect. This prevents "scope creep," where new features are endlessly added, derailing the project.Reduces Risk and Cost: By identifying potential problems, conflicts, or ambiguities on paper first, you save countless hours of coding and debugging. Building the wrong feature is the most expensive mistake in software.Creates a Testable Foundation: You can't test a feature if you don't know what it's supposed to do. Requirement analysis creates the "definition of done." This allows Quality Assurance (QA) teams to write specific test cases that validate whether the software is working correctly.Key Activities in Requirement AnalysisRequirement analysis is an active process, not just a single step. It typically involves these five key activities:Requirement Gathering: This is the initial brainstorming and collection phase. You gather all possible requirements from stakeholders through interviews, surveys, and workshops. The goal is to collect every idea, big or small.Requirement Elicitation: This is the next level. You dig deeper to discover the real needs behind the initial requests. A stakeholder might ask for a "green button," but the underlying requirement is "to make the 'submit' action more obvious." This activity uncovers the "why."Requirement Documentation: This is the process of writing everything down in a clear, structured, and unambiguous way. This document (often called a Software Requirements Specification or SRS) becomes the official guide for the project.Requirement Analysis and Modeling: This is where you organize the documented requirements. You look for conflicts, group related requirements, and identify dependencies. This is also where you create models, like Use Case Diagrams or data flow charts, to visualize how the system will work.Requirement Validation: This is the final check-in. You present the documented requirements and models back to the stakeholders. You ask, "Is this what you want?" This step ensures everyone is in agreement before a single line of code is written.Types of RequirementsRequirements are primarily broken down into two types: what it does, and how well it does it.Functional RequirementsThese define what the system must do. They are the specific features or functions you can see and interact with. If a functional requirement is missing, the system simply doesn't work.Based on a booking management system like AirBnB, examples include:User Authentication: A user must be able to create an account, log in, and log out.Property Search: A user must be able to search for properties by location, date, and number of guests.Property Listing: A logged-in "Host" user must be able to create, edit, and publish a new property listing.Booking: A logged-in "Guest" user must be able to select a property and book it for available dates.Payment: The system must be able to process a guest's payment information to confirm a booking.Non-functional RequirementsThese define the quality and constraints of the system. They describe how well the system performs its functions. A system can "work" but still fail if its non-functional requirements aren't met.Examples for the same booking system:Performance: The property search results page must load in under 2.5 seconds.Security: All user passwords must be salted and hashed before being stored in the database. All payment communication must use SSL.Usability: A new user must be able to complete a booking in 5 clicks or less from the homepage.Reliability: The system must have 99.9% uptime (be available and working).Scalability: The system must be able to handle 10,000 concurrent users searching for properties at the same time.Use Case DiagramsA Use Case Diagram is a simple visual model that shows how different actors (types of users) interact with the system to achieve a specific goal.They are beneficial because they provide a high-level, easy-to-understand view of the entire system's scope. They answer the question: "Who can do what?" They are excellent for communicating with both technical and non-technical stakeholders to make sure no key features are forgotten.Booking System Use Case DiagramHere is the use case diagram for our booking system, showing the main actors and their interactions.(As per your instructions, you will need to create this diagram in a tool like Draw.io, export it as alx-booking-uc.png, and add it to your repository for this image link to work.)Acceptance CriteriaAcceptance Criteria are the "definition of done" for a single feature or user story. They are a checklist of specific, testable conditions that a feature must meet to be considered complete and correct.They are critical because they remove ambiguity. A developer knows exactly what their code needs to do, and a tester knows exactly what to check. This ensures that the feature works as the stakeholder intended.Example: Acceptance Criteria for "Checkout Feature"Feature: Simple CheckoutUser Story: As a Guest, I want to pay for my booking so that I can receive a confirmation.Scenario: Guest completes a booking with a valid credit cardGiven I am a logged-in Guest on the "Checkout" page,And I can see the total price and booking details,And I have entered valid credit card information,When I click the "Confirm and Pay" button,Then my payment should be processed successfully.And the system should prevent anyone else from booking those dates for that property.And I should be redirected to a "Booking Confirmed" success page.And I should receive a confirmation email with my booking details.Scenario: Guest completes a booking with a failed credit cardGiven I am a logged-in Guest on the "Checkout" page,And I have entered invalid or declined credit card information,When I click the "Confirm and Pay" button,Then my payment should fail.And I should remain on the Checkout page.And I should see a clear error message, like "Payment failed. Please check your card details."
+Requirement Analysis in Software Development 
+Requirement Analysis in Software Development
+
+This repository is an ALX Pro-Dev project focused on the Requirement Analysis phase of the Software Development Lifecycle (SDLC). The goal is to create a detailed blueprint for a booking management system (similar to AirBnB or OYO), which will serve as the foundation for all future development, design, and testing.
+
+What is Requirement Analysis?
+
+Requirement Analysis is the process of figuring out, documenting, and analyzing what a piece of software needs to do and how well it needs to do it.
+
+It's the critical "blueprint" phase of the SDLC. It involves talking to stakeholders (like users, business managers, and other developers) to understand their goals, and then translating those goals into detailed requirements. If you don't get this phase right, you risk building the wrong product, which wastes time, money, and effort. It's the bridge between the initial business idea and the final technical solution.
+
+Why is Requirement Analysis Important?
+
+This phase is critical because it directly impacts the project's success. A mistake caught during analysis is 100 times cheaper to fix than a mistake found after the product has been built and deployed.
+
+Sets Clear Goals and Scope: It provides a clear, agreed-upon "source of truth." The development team knows exactly what to build, and the client knows exactly what to expect. This prevents "scope creep," where new features are endlessly added, derailing the project.
+
+Reduces Risk and Cost: By identifying potential problems, conflicts, or ambiguities on paper first, you save countless hours of coding and debugging. Building the wrong feature is the most expensive mistake in software.
+
+Creates a Testable Foundation: You can't test a feature if you don't know what it's supposed to do. Requirement analysis creates the "definition of done." This allows Quality Assurance (QA) teams to write specific test cases that validate whether the software is working correctly.
+
+Key Activities in Requirement Analysis
+
+Requirement analysis is an active process, not just a single step. It typically involves these five key activities:
+
+Requirement Gathering: This is the initial brainstorming and collection phase. You gather all possible requirements from stakeholders through interviews, surveys, and workshops. The goal is to collect every idea, big or small.
+
+Requirement Elicitation: This is the next level. You dig deeper to discover the real needs behind the initial requests. A stakeholder might ask for a "green button," but the underlying requirement is "to make the 'submit' action more obvious." This activity uncovers the "why."
+
+Requirement Documentation: This is the process of writing everything down in a clear, structured, and unambiguous way. This document (often called a Software Requirements Specification or SRS) becomes the official guide for the project.
+
+Requirement Analysis and Modeling: This is where you organize the documented requirements. You look for conflicts, group related requirements, and identify dependencies. This is also where you create models, like Use Case Diagrams or data flow charts, to visualize how the system will work.
+
+Requirement Validation: This is the final check-in. You present the documented requirements and models back to the stakeholders. You ask, "Is this what you want?" This step ensures everyone is in agreement before a single line of code is written.
+
+Types of Requirements
+
+Requirements are primarily broken down into two types: what it does, and how well it does it.
+
+Functional Requirements
+
+These define what the system must do. They are the specific features or functions you can see and interact with. If a functional requirement is missing, the system simply doesn't work.
+
+Based on a booking management system like AirBnB, examples include:
+
+User Authentication: A user must be able to create an account, log in, and log out.
+
+Property Search: A user must be able to search for properties by location, date, and number of guests.
+
+Property Listing: A logged-in "Host" user must be able to create, edit, and publish a new property listing.
+
+Booking: A logged-in "Guest" user must be able to select a property and book it for available dates.
+
+Payment: The system must be able to process a guest's payment information to confirm a booking.
+
+Non-functional Requirements
+
+These define the quality and constraints of the system. They describe how well the system performs its functions. A system can "work" but still fail if its non-functional requirements aren't met.
+
+Examples for the same booking system:
+
+Performance: The property search results page must load in under 2.5 seconds.
+
+Security: All user passwords must be salted and hashed before being stored in the database. All payment communication must use SSL.
+
+Usability: A new user must be able to complete a booking in 5 clicks or less from the homepage.
+
+Reliability: The system must have 99.9% uptime (be available and working).
+
+Scalability: The system must be able to handle 10,000 concurrent users searching for properties at the same time.
+
+Use Case Diagrams
+
+A Use Case Diagram is a simple visual model that shows how different actors (types of users) interact with the system to achieve a specific goal.
+
+They are beneficial because they provide a high-level, easy-to-understand view of the entire system's scope. They answer the question: "Who can do what?" They are excellent for communicating with both technical and non-technical stakeholders to make sure no key features are forgotten.
+
+Booking System Use Case Diagram
+
+Here is the use case diagram for our booking system, showing the main actors and their interactions.
+
+(As per your instructions, you will need to create this diagram in a tool like Draw.io, export it as alx-booking-uc.png, and add it to your repository for this image link to work.)
+
+Acceptance Criteria
+
+Acceptance Criteria are the "definition of done" for a single feature or user story. They are a checklist of specific, testable conditions that a feature must meet to be considered complete and correct.
+
+They are critical because they remove ambiguity. A developer knows exactly what their code needs to do, and a tester knows exactly what to check. This ensures that the feature works as the stakeholder intended.
+
+Example: Acceptance Criteria for "Checkout Feature"
+
+Feature: Simple Checkout
+User Story: As a Guest, I want to pay for my booking so that I can receive a confirmation.
+
+Scenario: Guest completes a booking with a valid credit card
+
+Given I am a logged-in Guest on the "Checkout" page,
+
+And I can see the total price and booking details,
+
+And I have entered valid credit card information,
+
+When I click the "Confirm and Pay" button,
+
+Then my payment should be processed successfully.
+
+And the system should prevent anyone else from booking those dates for that property.
+
+And I should be redirected to a "Booking Confirmed" success page.
+
+And I should receive a confirmation email with my booking details.
+
+Scenario: Guest completes a booking with a failed credit card
+
+Given I am a logged-in Guest on the "Checkout" page,
+
+And I have entered invalid or declined credit card information,
+
+When I click the "Confirm and Pay" button,
+
+Then my payment should fail.
+
+And I should remain on the Checkout page.
+
+And I should see a clear error message, like "Payment failed. Please check your card details."
